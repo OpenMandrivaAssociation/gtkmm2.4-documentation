@@ -15,6 +15,7 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Source:		http://ftp.gnome.org/pub/GNOME/sources/%{pkgname}/%{pkgname}-%{version}.tar.bz2
 BuildRequires: gtkmm2.4-devel >= 2.10.0
 BuildRequires: libglademm2.4-devel >= 2.6.0
+BuildRequires: gnome-doc-utils
 BuildArch: noarch
 Requires: gtkmm2.4-doc >= 2.14.0
 
