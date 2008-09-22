@@ -1,11 +1,11 @@
-%define version 2.13.2
+%define version 2.14.0
 %define release %mkrel 1
 
 %define pkgname	gtkmm-documentation
 %define api_version 2.4
 
-Name:		gtkmm%{api_version}-doc
-Summary:	GTKmm documentation
+Name:		gtkmm%{api_version}-documentation
+Summary:	GTKmm reference manual and examples
 Version:	%{version}
 Release:	%{release}
 License:	GPLv2+ and GFDL
@@ -16,6 +16,7 @@ Source:		http://ftp.gnome.org/pub/GNOME/sources/%{pkgname}/%{pkgname}-%{version}
 BuildRequires: gtkmm2.4-devel >= 2.10.0
 BuildRequires: libglademm2.4-devel >= 2.6.0
 BuildArch: noarch
+Requires: gtkmm2.4-doc >= 2.14.0
 
 %description
 Gtkmm provides a C++ interface to the GTK+ GUI library. Gtkmm2 wraps GTK+ 2.
@@ -38,6 +39,8 @@ rm -rf %{buildroot}
 %makeinstall_std
 
 %find_lang gtkmm-tut-with-examples --with-gnome
+#gw already in gtkmm2.4-doc
+rm -rf %buildroot%{_datadir}/doc/gtkmm-%{api_version}/docs/{FAQ,images}
 
 %clean
 rm -rf %{buildroot}
