@@ -1,4 +1,4 @@
-%define version 2.16.0
+%define version 2.17.0
 %define release %mkrel 1
 
 %define pkgname	gtkmm-documentation
@@ -33,7 +33,7 @@ this documentation with devhelp, a documentation reader.
 
 %build
 ./configure --prefix=%_prefix
-%make
+make
 
 %install
 rm -rf %{buildroot}
