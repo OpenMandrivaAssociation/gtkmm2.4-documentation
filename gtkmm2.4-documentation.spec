@@ -1,4 +1,4 @@
-%define version 2.17.0
+%define version 2.17.1
 %define release %mkrel 1
 
 %define pkgname	gtkmm-documentation
@@ -39,14 +39,14 @@ make
 rm -rf %{buildroot}
 %makeinstall_std
 
-%find_lang gtkmm-tut-with-examples --with-gnome
+%find_lang gtkmm-tutorial --with-gnome
 #gw already in gtkmm2.4-doc
 rm -rf %buildroot%{_datadir}/doc/gtkmm-%{api_version}/docs/{FAQ,images}
 
 %clean
 rm -rf %{buildroot}
 
-%files -f gtkmm-tut-with-examples.lang
+%files -f gtkmm-tutorial.lang
 %defattr(-, root, root)
 %doc %{_datadir}/doc/gtkmm-%{api_version}
 
