@@ -1,4 +1,4 @@
-%define version 2.17.3
+%define version 2.17.4
 %define release %mkrel 1
 
 %define pkgname	gtkmm-documentation
