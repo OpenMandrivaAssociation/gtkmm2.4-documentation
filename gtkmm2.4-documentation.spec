@@ -1,4 +1,4 @@
-%define version 2.22.0
+%define version 2.24.0
 %define release %mkrel 1
 
 %define pkgname	gtkmm-documentation
@@ -13,7 +13,7 @@ Group:		Books/Other
 URL:		http://gtkmm.sourceforge.net/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Source:		http://ftp.gnome.org/pub/GNOME/sources/%{pkgname}/%{pkgname}-%{version}.tar.bz2
-BuildRequires: gtkmm2.4-devel >= 2.20.0
+BuildRequires: gtkmm2.4-devel >= 2.24.0
 BuildRequires: glibmm2.4-devel >= 2.24.0
 BuildRequires: libglademm2.4-devel >= 2.6.0
 BuildRequires: gnome-doc-utils
