@@ -1,5 +1,5 @@
 %define version 2.24.1
-%define release %mkrel 1
+%define release %mkrel 2
 
 %define pkgname	gtkmm-documentation
 %define api_version 2.4
