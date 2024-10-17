@@ -10,7 +10,7 @@ Version:	%{version}
 Release:	%{release}
 License:	GPLv2+ and GFDL
 Group:		Books/Other
-URL:		http://gtkmm.sourceforge.net/
+URL:		https://gtkmm.sourceforge.net/
 Source0:		http://ftp.gnome.org/pub/GNOME/sources/%{pkgname}/%{pkgname}-%{version}.tar.bz2
 source1:		.abf.yml
 BuildRequires: pkgconfig(gtkmm-2.4) >= 2.24.0
